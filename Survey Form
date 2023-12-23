@@ -27,10 +27,11 @@
         <option value="">(select one)</option>
         <option value="1">YouTube</option>
         <option value="2">TikTok</option>
-        <option value="3">Google</optiom>
+        <option value="3">Google</option>
         <option value="4">Other</option>
         </select>
         </label>
+        </fieldset>
         <fieldset>
           <legend>What field in computer science do you like?(select all that apply)</legend>
           <input id="AI" type="checkbox" name="field" value="AI" checked> <label for="AI">AI engineering</label>
@@ -42,7 +43,8 @@
       <label for="bio">Please tell us about yourself:
         <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I love C++ and HTML..."></textarea> </label>
         </fieldset>
-        <button type="submit" id="submit" />
-        Submit</button>
-        </body>
-        </html>
+        
+        <input type="submit" value="Submit" />
+        </form>
+  </body>
+</html>
