@@ -1,45 +1,48 @@
-<!DOCTYPE html>
+<!Doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title>Registration Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
     <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <h1>Registration Form</h1>
-    <p>Please fill out this form with the required information</p>
-    <form method="post" action='https://register-demo.freecodecamp.org'>
-      <fieldset>
-        <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" required /></label>
-        <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required /></label>
-        <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
-        <label for="new-password">Create a New Password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
-      </fieldset>
-      <fieldset>
-        <legend>Account type (required)</legend>
-        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" checked /> Personal</label>
-        <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" /> Business</label>
-      </fieldset>
-      <fieldset>
-        <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file" name="file" /></label>
-        <label for="age">Input your age (years): <input id="age" type="number" name="age" min="13" max="120" /></label>
-        <label for="referrer">How did you hear about us?
-          <select id="referrer" name="referrer">
-            <option value="">(select one)</option>
-            <option value="1">freeCodeCamp News</option>
-            <option value="2">freeCodeCamp YouTube Channel</option>
-            <option value="3">freeCodeCamp Forum</option>
-            <option value="4">Other</option>
-          </select>
+    </head>
+    <body>
+      <h1>Survey Form</h1>
+      <p>Please take your time to fill out the survey form!</p>
+      <form id="survey-form">
+     <fieldset>
+       <label for="name-label">Enter your full name: <input id="name-label" name="name-label" type="text" placeholder="Aline Jouaidi" required /> </label>
+  <label for="email-label">Enter your email: <input id="email-label" name="email-label" type="email" placeholder="someoneheuf@gmail.com" required /> </label>
+ <label for="number-label">Enter your age(optional): 
+   <input id="age" type="number" name="number-label" min="10" max="99" /> </label>
+</fieldset>
+<fieldset>
+  <legend>Type of Account (required)</legend>
+  <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" checked /> Personal </label>
+  <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" /> Business</label>
+  </fieldset>
+  <fieldset>
+    <label for="referrer"> How did you hear about us?
+      <select id="referrer" name ="referrer">
+        <option value="">(select one)</option>
+        <option value="1">YouTube</option>
+        <option value="2">TikTok</option>
+        <option value="3">Google</optiom>
+        <option value="4">Other</option>
+        </select>
         </label>
-        <label for="bio">Provide a bio:
-          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
-        </label>
-      </fieldset>
-      <label for="terms-and-conditions">
-        <input id="terms-and-conditions" type="checkbox" class="inline" required name="terms-and-conditions" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
-      </label>
-      <input type="submit" value="Submit" />
-    </form>
-  </body>
-</html>
+        <fieldset>
+          <legend>What field in computer science do you like?(select all that apply)</legend>
+          <input id="AI" type="checkbox" name="field" value="AI" checked> <label for="AI">AI engineering</label>
+      <input id="software" type="checkbox" name="field" value="software"> <label for="software">Software engineering</label>
+          <input id="front" type="checkbox" name="field" value="front"> <label for="front">Frontend</label>
+       <input id="back" type="checkbox" name="field" value="back"> <label for="back">Backend</label>   
+       </fieldset>
+    <fieldset>
+      <label for="bio">Please tell us about yourself:
+        <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I love C++ and HTML..."></textarea> </label>
+        </fieldset>
+        <button type="submit" id="submit" />
+        Submit</button>
+        </body>
+        </html>
