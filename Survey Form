@@ -7,23 +7,23 @@
     <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-      <h1>Survey Form</h1>
-      <p>Please take your time to fill out the survey form!</p>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Please take your time to fill out the survey form!</p>
       <form id="survey-form">
      <fieldset>
-       <label for="name-label">Enter your full name: <input id="name-label" name="name-label" type="text" placeholder="Aline Jouaidi" required /> </label>
-  <label for="email-label">Enter your email: <input id="email-label" name="email-label" type="email" placeholder="someoneheuf@gmail.com" required /> </label>
- <label for="number-label">Enter your age(optional): 
-   <input id="age" type="number" name="number-label" min="10" max="99" /> </label>
+       <label id="name-label">Enter your full name: <input id="name" name="name-label" type="text" placeholder="Aline Jouaidi" required /> </label>
+  <label id="email-label">Enter your email: <input id="email" name="email-label" type="email" placeholder="someoneheuf@gmail.com" required /> </label>
+ <label id="number-label">Enter your age(optional): 
+   <input id="number" type="number" name="number" min="10" max="99" placeholder="19" /> </label>
 </fieldset>
 <fieldset>
   <legend>Type of Account (required)</legend>
-  <label for="personal-account"><input id="personal-account" type="radio" value="account-type" name="account-type" class="inline" checked /> Personal </label>
-  <label for="business-account"><input id="business-account" type="radio" value="account-type" name="account-type" class="inline" /> Business</label>
+  <label for="personal-account"><input id="personal-account" type="radio" value="personal-type" name="account-type" class="inline" checked /> Personal </label>
+  <label for="business-account"><input id="business-account" type="radio" value="business-type" name="account-type" class="inline" /> Business</label>
   </fieldset>
   <fieldset>
     <label for="referrer"> How did you hear about us?
-      <select id="referrer" name ="referrer">
+      <select id="dropdown" name ="dropdown">
         <option value="">(select one)</option>
         <option value="1">YouTube</option>
         <option value="2">TikTok</option>
@@ -31,7 +31,6 @@
         <option value="4">Other</option>
         </select>
         </label>
-        </fieldset>
         <fieldset>
           <legend>What field in computer science do you like?(select all that apply)</legend>
           <input id="AI" type="checkbox" name="field" value="AI" checked> <label for="AI">AI engineering</label>
@@ -43,8 +42,7 @@
       <label for="bio">Please tell us about yourself:
         <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I love C++ and HTML..."></textarea> </label>
         </fieldset>
-        
-        <input type="submit" value="Submit" />
+        <input type="submit" id="submit"></input>
         </form>
-  </body>
-</html>
+        </body>
+        </html>
